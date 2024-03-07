@@ -1,18 +1,36 @@
-name = input("Hi")
+from tkinter import* 
 
-class Pet(): 
-    name = None 
-    fullness = 0
+class Student ():
+    def _init_(self):
+        self.first_name = "John"
 
-    def __init__(self,name):
-        self.name = name 
 
-    def eat (self,food):
-        print(self.name + "is eating" + food + "....")
-        if food == "carrots": 
-            self.fullness = self.fullness + 10
-        elif food =="grass":
-            self.fullness = self.fullness + 5
-        elif food == "water":
+    def display_name(self):
+        print(self.first_name)
+  
+    def set_grade(self,grade):
+        self.grade = grade 
 
-         print (self.name, "is now", self.fullness, "") 
+    def get_grade(self):
+        return self.grade
+
+def show_grade():
+    #show the grade using a label
+    grade_label.config(text=csc_2[0].grade())
+    pass
+
+csc_2 = []
+
+csc_2.append(Student("Anna"))
+csc_2[0].set_grade("Excellence")
+
+window = Tk()
+window.geometry("300x300")
+
+grade_label = Label()
+grade_label.pack()
+
+show_grade_btn = Button(text="Show Grade", command=show_grade)
+show_grade_btn.pack()
+
+window.mainloop()
