@@ -2,6 +2,10 @@ from tkinter import*
 
 names_list = []
 
+global questions_answers
+
+
+
 
 class QuizStarter:
     def __init__(self,parent):
