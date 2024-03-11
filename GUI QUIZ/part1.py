@@ -1,5 +1,8 @@
 from tkinter import* 
 
+names_list = []
+
+
 class QuizStarter:
     def __init__(self,parent):
         background_color="Old Lace"
@@ -11,9 +14,23 @@ class QuizStarter:
         self.heading_label = Label (self.quiz_frame, text = "NZ Road Rules", font=("Tw Cen MT", "18", "bold"), bg=background_color)
         self.heading_label.grid(row=0)
 
+        #Label for user name prompt
         self.user_label = Label (self.quiz_frame, text ="Please enter your name below", font=("Tw Cen MT", "16"), bg=background_color)
         self.user_label.grid(row=1)
 
+        #Users input is taken by an Entry Widget
+        self.entry_box=Entry(self.quiz_frame)
+        self.entry_box.grid(row=2, pady=20)
+
+        #continue button 
+        self.continue_button = Button (self.quiz_frame, text="Continue", bg="pink", command=self.name_collection)
+        self.continue_button.grid (row=3, pady=20)
+    
+    def name_collection(self):
+        name = self.entry_box.get()
+        names_list.append(name)
+        print(names_list)
+        self.quiz_frame.destroy()
 
 
 
