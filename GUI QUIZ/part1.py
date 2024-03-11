@@ -6,7 +6,6 @@ global questions_answers
 
 
 
-
 class QuizStarter:
     def __init__(self,parent):
         background_color="Old Lace"
@@ -37,9 +36,8 @@ class QuizStarter:
         self.quiz_frame.destroy()
 
 
-
 #*****************Starting point of the program*************#
-if __name__ =="part1":
+if __name__ =="__main__":
     root = Tk()
     root.title("NZ Road Rules Quiz")
     quizStarter_object = QuizStarter(root)
