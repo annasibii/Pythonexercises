@@ -1,8 +1,20 @@
 from tkinter import* 
 
 names_list = []
-
 global questions_answers
+
+questions_answers = {
+    1: ["What must you do when you see blue and red flashing lights behind you?",
+        'Speed up and get out of the way',
+        'Slow down and drive carefully',
+        'Slow down and stop',
+        "Drive on as usual"
+        "Slow down and stop" 
+        
+        ,3],
+
+}
+
 
 
 
