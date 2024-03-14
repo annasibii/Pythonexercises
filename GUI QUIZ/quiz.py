@@ -16,8 +16,6 @@ questions_answers = {
 }
 
 
-
-
 class QuizStarter:
     def __init__(self,parent):
         background_color="Old Lace"
