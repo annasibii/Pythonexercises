@@ -8,10 +8,28 @@ questions_answers = {
         'Speed up and get out of the way',
         'Slow down and drive carefully',
         'Slow down and stop',
-        "Drive on as usual"
-        "Slow down and stop" 
-        
-        ,3],
+        "Drive on as usual",
+        "Slow down and stop",  ,3],
+
+    2: ["You may stop on a motorway only:", 
+        'if there is an emergency',
+        'To let down or pick up passengers',
+        'to make a U turn', 
+        'to stop and take a photo', 
+        'if there is an emergency', 1],
+
+    3: ["When coming up to a pedestrian crossing without a raised traffic island, what must you do?",
+        "Speed up before the pedestrians cross",
+        'Stop and give way to pedestrians on any part of the crossing',
+        "Sound the horn on your vehicile to warn the pedestrians",
+        "Slow down to 30 kmh",
+        'Stop and give way to pedestrians on any part of the crossing',2,]
+
+
+
+
+
+
 
 }
 
