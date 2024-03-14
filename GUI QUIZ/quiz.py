@@ -8,8 +8,7 @@ questions_answers = {
         'Speed up and get out of the way',
         'Slow down and drive carefully',
         'Slow down and stop',
-        "Drive on as usual",
-        "Slow down and stop",  ,3],
+        "Drive on as usual", 3],
 
     2: ["You may stop on a motorway only:", 
         'if there is an emergency',
@@ -23,12 +22,36 @@ questions_answers = {
         'Stop and give way to pedestrians on any part of the crossing',
         "Sound the horn on your vehicile to warn the pedestrians",
         "Slow down to 30 kmh",
-        'Stop and give way to pedestrians on any part of the crossing',2,]
+        'Stop and give way to pedestrians on any part of the crossing',2,],
+
+    4: ["Can you stop on a bus stop in a private motor vehicle?", 
+        'Only between midnight and 6am',
+        "Under no circumstances",
+        "When dropping off passengers",
+        'Only if it is less than 5 minutes',
+        "Under no circumstances", 2],
+
+    5: ["What is the maximum speed you may drive if you have a 'space saver wheel' fitted? (km/h)",
+        '70 km/h',
+        "100km/h so you do not hold up traffic",
+        "80 km/h and if the wheel spacer displays a lower limit that applies",3,],
+    
+    6: ["When following another vehicle on a dusty road, you should:",
+        'Speed up to get passed', 
+        "Turn your bechicle's windscreen wipers on",
+        "Stay back from the dust cloud",
+        'Turn your vehicles headlights on', 
+        "Stay back from the dust cloud",3,],
+
+    7: ["What does the sign containing the letters 'LSZ' mean", 
+        'Low safety zone', 
+        "Low stability zone",
+        "Lone star zone",
+        'Limited speed zone',
+        ""
 
 
-
-
-
+    ]
 
 
 }
