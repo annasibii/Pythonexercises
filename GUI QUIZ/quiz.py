@@ -11,7 +11,7 @@ questions_answers = {
         'Slow down and drive carefully',
         'Slow down and stop',
         "Drive on as usual",
-        "Slow down and stop",  ,3],
+        "Slow down and stop", 3],
 
     2: ["You may stop on a motorway only:", 
         'if there is an emergency',
