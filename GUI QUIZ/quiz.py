@@ -151,7 +151,7 @@ class Quiz:
         self.rb4.grid(row=4, sticky=W)
 
         #confirm answer button
-        self.confirm_button = Button(self.quiz_frame, text="Confirm" bg="pink" )
+        self.confirm_button = Button (self.quiz_frame, text="Confirm" bg="pink" )
         self.confirm_button.grid(row=5)
 
 
