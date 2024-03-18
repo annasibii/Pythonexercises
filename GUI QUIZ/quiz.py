@@ -1,14 +1,17 @@
 from tkinter import* 
+import random
 
 names_list = []
 global questions_answers
+asked = []
 
 questions_answers = {
     1: ["What must you do when you see blue and red flashing lights behind you?",
         'Speed up and get out of the way',
         'Slow down and drive carefully',
         'Slow down and stop',
-        "Drive on as usual", 3],
+        "Drive on as usual",
+        'Slow down and stop', 3],
 
     2: ["You may stop on a motorway only:", 
         'if there is an emergency',
@@ -47,14 +50,39 @@ questions_answers = {
         'Low safety zone', 
         "Low stability zone",
         "Lone star zone",
-        'Limited speed zone',
-        ""
+        'Limited speed zone',4,],
 
+    8: ["What speed are you allowed to pass a school bus that has stopped to let sutdents on or off?",
+        '20km/h',
+        '30km/h',
+        '70km/h',
+        '10km/h',
+        '20km/h',1,],
+      
+    9: ["What is the maximum distance a load may extend in front of a car?",
+        '2 meters forward of the front edge of the front seat',
+        '4 meters forward of the front edge of the front seat',
+        '3 meters forward of the front edge of the front seat',
+        '2.5 meters forward of the front edge of the front seat',
+        '3 meters forward of the front edge of the front seat',3,],
 
-    ]
-
+    10:["To avoid being blinded by the headlights of another vehicle coming towards you what should you do?",
+        'Look to the left of the road',
+        'Look to the right',
+        'stop the car until the car is gone',
+        'buy better sunglasses',
+        'Look to the left of the road',1,]
 
 }
+
+def randomiser():
+    global qnum
+    qnum = random.randint(1,10) #asks random questions from this range
+    if qnum not in asked:
+        asked.append(qnum)
+    elif qnum in asked:
+        randomiser
+    
 
 
 class QuizStarter:
@@ -86,7 +114,7 @@ class QuizStarter:
         print(names_list)
         self.quiz_frame.destroy()
 
-
+randomiser()
 #*****************Starting point of the program*************#
 if __name__ =="__main__":
     root = Tk()
